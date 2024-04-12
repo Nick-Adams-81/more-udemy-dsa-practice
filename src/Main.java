@@ -29,10 +29,20 @@ public class Main {
         list.printTail();
         list.printLength();
 
-        list.removeLast();
+        list.removeFirst();
         list.printList();
         list.printHead();
         list.printTail();
         list.printLength();
+
+        list.append(5);
+        list.append(90);
+        list.prepend(14);
+        list.printList();
+
+        System.out.println("Index: " + list.get(1));
+
+        list.set(1, 55);
+        list.printList();
     }
 }

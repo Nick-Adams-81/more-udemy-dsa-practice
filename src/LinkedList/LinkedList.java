@@ -6,6 +6,16 @@ public class LinkedList {
     private Node tail;
     private int length;
 
+    class Node {
+
+        int value;
+        Node next;
+
+        public Node(int value) {
+            this.value = value;
+        }
+    }
+
     public LinkedList(int value) {
         Node newNode = new Node(value);
         head = newNode;
@@ -86,5 +96,24 @@ public class LinkedList {
         }
         return temp;
     }
+
+    public Node get(int index) {
+        if(index < 0 || index >= length) return null;
+        Node temp = head;
+        for(int i = 0; i < index; i++) {
+            temp = temp.next;
+        }
+        return temp;
+    }
+
+    public boolean set(int index, int value) {
+        Node temp = get(index);
+        if(temp != null) {
+            temp.value = value;
+            return true;
+        }
+        return false;
+    }
+
 
 }
