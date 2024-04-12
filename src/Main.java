@@ -44,5 +44,13 @@ public class Main {
 
         list.set(1, 55);
         list.printList();
+        System.out.println("\n");
+        list.insert(2, 100);
+        list.insert(3, 200);
+        list.printList();
+
+        list.remove(3);
+        list.remove(2);
+        list.printList();
     }
 }
