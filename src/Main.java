@@ -48,9 +48,13 @@ public class Main {
         list.insert(2, 100);
         list.insert(3, 200);
         list.printList();
-
+        System.out.println("\n");
         list.remove(3);
         list.remove(2);
         list.printList();
+        System.out.println("\n");
+        list.reverse();
+        list.printList();
+
     }
 }
