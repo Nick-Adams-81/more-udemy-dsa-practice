@@ -25,7 +25,7 @@ public class DLL {
     }
 
     public void printTail() {
-        System.out.println("Tail " + tail.value);
+        System.out.println("Tail: " + tail.value);
     }
 
     public void printLength() {
@@ -58,6 +58,21 @@ public class DLL {
             newNode.prev = null;
         }
         length++;
+    }
+
+    public Node removeLast() {
+        Node temp = tail;
+        if(length == 0) return null;
+        if(length == 1) {
+            head = null;
+            tail = null;
+        } else {
+            tail = tail.prev;
+            tail.next = null;
+            temp.prev = null;
+        }
+        length--;
+        return temp;
     }
 
 
