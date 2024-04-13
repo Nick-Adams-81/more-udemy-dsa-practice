@@ -97,7 +97,12 @@ public class Main {
         dll.printTail();
         dll.printLength();
 
-        System.out.println(dll.get(2));
+        System.out.println("\n");
+        dll.set(2, 300);
+        dll.printList();
+        dll.printHead();
+        dll.printTail();
+        dll.printLength();
 
     }
 }
