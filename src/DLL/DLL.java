@@ -14,7 +14,7 @@ public class DLL {
 
     public void printList() {
         Node temp = head;
-        for(int i = 0; i < length; i++) {
+        while(temp != null) {
             System.out.println(temp.value);
             temp = temp.next;
         }
@@ -31,4 +31,34 @@ public class DLL {
     public void printLength() {
         System.out.println("Length: " + length);
     }
+
+    public void append(int value) {
+        Node newNode = new Node(value);
+        if(length == 0) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            newNode.prev = tail;
+            tail = newNode;
+            newNode.next = null;
+        }
+        length++;
+    }
+
+    public void prepend(int value) {
+        Node newNode = new Node(value);
+        if(length == 0) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            head.prev = newNode;
+            newNode.next = head;
+            head = newNode;
+            newNode.prev = null;
+        }
+        length++;
+    }
+
+
  }
