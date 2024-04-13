@@ -138,5 +138,22 @@ public class DLL {
     }
 
 
+    public Node remove(int index) {
+        if(index < 0 || index >= length) return null;
+        if(index == 0) return removeFirst();
+        if(index == length -1) return removeLast();
+
+        Node temp = get(index);
+        Node before = temp.prev;
+        Node after = temp.next;
+
+        temp.prev = null;
+        temp.next = null;
+        before.next = after;
+        after.prev = before;
+        length--;
+        return temp;
+
+    }
 
  }
