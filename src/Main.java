@@ -144,6 +144,17 @@ public class Main {
         queue.printLast();
         queue.printLength();
 
+        queue.enqueue(2);
+        queue.printQueue();
+        queue.printFirst();
+        queue.printLast();
+        queue.printLength();
+
+        queue.dequeue();
+        queue.printQueue();
+        queue.printFirst();
+        queue.printLast();
+        queue.printLength();
 
 
     }
