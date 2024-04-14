@@ -1,5 +1,6 @@
 import DLL.DLL;
 import LinkedList.LinkedList;
+import Stack.Stack;
 
 public class Main {
 
@@ -58,63 +59,75 @@ public class Main {
 //        list.printList();
 
 
-        DLL dll = new DLL(1);
-        dll.printList();
-        dll.printHead();
-        dll.printTail();
-        dll.printLength();
+//        DLL dll = new DLL(1);
+//        dll.printList();
+//        dll.printHead();
+//        dll.printTail();
+//        dll.printLength();
+//
+//        dll.append(2);
+//        dll.printList();
+//        dll.printHead();
+//        dll.printTail();
+//        dll.printLength();
+//
+//        dll.prepend(0);
+//        dll.printList();
+//        dll.printHead();
+//        dll.printTail();
+//        dll.printLength();
+//
+//        dll.removeLast();
+//        dll.printList();
+//        dll.printHead();
+//        dll.printTail();
+//        dll.printLength();
+//
+//        dll.removeFirst();
+//        dll.printList();
+//        dll.printHead();
+//        dll.printTail();
+//        dll.printLength();
+//        System.out.println("\n");
+//
+//        dll.prepend(0);
+//        dll.append(2);
+//        dll.append(3);
+//        dll.printList();
+//        dll.printHead();
+//        dll.printTail();
+//        dll.printLength();
+//
+//        System.out.println("\n");
+//        dll.set(2, 300);
+//        dll.printList();
+//        dll.printHead();
+//        dll.printTail();
+//        dll.printLength();
+//
+//        dll.insert(3, 543);
+//        dll.printList();
+//        dll.printHead();
+//        dll.printTail();
+//        dll.printLength();
+//
+//        dll.remove(3);
+//        dll.printList();
+//        dll.printHead();
+//        dll.printTail();
+//        dll.printLength();
 
-        dll.append(2);
-        dll.printList();
-        dll.printHead();
-        dll.printTail();
-        dll.printLength();
+        Stack stack = new Stack(1);
+        stack.printStack();
+        stack.printTop();
+        stack.printHeight();
 
-        dll.prepend(0);
-        dll.printList();
-        dll.printHead();
-        dll.printTail();
-        dll.printLength();
+        stack.push(2);
+        stack.printStack();
+        stack.printTop();
+        stack.printHeight();
 
-        dll.removeLast();
-        dll.printList();
-        dll.printHead();
-        dll.printTail();
-        dll.printLength();
 
-        dll.removeFirst();
-        dll.printList();
-        dll.printHead();
-        dll.printTail();
-        dll.printLength();
-        System.out.println("\n");
-
-        dll.prepend(0);
-        dll.append(2);
-        dll.append(3);
-        dll.printList();
-        dll.printHead();
-        dll.printTail();
-        dll.printLength();
-
-        System.out.println("\n");
-        dll.set(2, 300);
-        dll.printList();
-        dll.printHead();
-        dll.printTail();
-        dll.printLength();
-
-        dll.insert(3, 543);
-        dll.printList();
-        dll.printHead();
-        dll.printTail();
-        dll.printLength();
-
-        dll.remove(3);
-        dll.printList();
-        dll.printHead();
-        dll.printTail();
-        dll.printLength();
 
     }
 }
