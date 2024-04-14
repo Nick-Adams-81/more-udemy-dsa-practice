@@ -1,5 +1,6 @@
 import DLL.DLL;
 import LinkedList.LinkedList;
+import Queue.Queue;
 import Stack.Stack;
 
 public class Main {
@@ -136,6 +137,12 @@ public class Main {
         stack.printStack();
         stack.printTop();
         stack.printHeight();
+
+        Queue queue = new Queue(1);
+        queue.printQueue();
+        queue.printFirst();
+        queue.printLast();
+        queue.printLength();
 
 
 
