@@ -127,6 +127,16 @@ public class Main {
         stack.printTop();
         stack.printHeight();
 
+        stack.push(3);
+        stack.printStack();
+        stack.printTop();
+        stack.printHeight();
+
+        stack.pop();
+        stack.printStack();
+        stack.printTop();
+        stack.printHeight();
+
 
 
     }
