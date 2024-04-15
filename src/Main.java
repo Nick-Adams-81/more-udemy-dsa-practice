@@ -2,6 +2,7 @@ import DLL.DLL;
 import LinkedList.LinkedList;
 import Queue.Queue;
 import Stack.Stack;
+import Trees.BST;
 
 public class Main {
 
@@ -155,6 +156,12 @@ public class Main {
         queue.printFirst();
         queue.printLast();
         queue.printLength();
+
+        System.out.println("\n");
+        BST bst = new BST();
+
+        bst.insert(25);
+        bst.printRoot();
 
 
     }
