@@ -161,7 +161,15 @@ public class Main {
         BST bst = new BST();
 
         bst.insert(25);
+        bst.insert(15);
+        bst.insert(30);
+        bst.insert(35);
+        bst.insert(10);
         bst.printRoot();
+
+        System.out.println(bst.root.left.value);
+
+        System.out.println(bst.contains(27));
 
 
     }

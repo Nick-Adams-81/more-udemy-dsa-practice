@@ -2,7 +2,7 @@ package Trees;
 
 public class BST {
 
-    Node root;
+    public Node root;
 
 
     public void printRoot() {
@@ -34,5 +34,19 @@ public class BST {
         }
     }
 
+    public boolean contains(int value) {
+        Node temp = root;
+        if(root == null) return false;
+        while(temp != null) {
+            if(value < temp.value) {
+                temp = temp.left;
+            } else if(value > temp.value) {
+                temp = temp.right;
+            } else {
+                return true;
+            }
+        }
+        return false;
+    }
 
 }
