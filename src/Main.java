@@ -1,4 +1,5 @@
 import DLL.DLL;
+import HashTable.HashTable;
 import LinkedList.LinkedList;
 import Queue.Queue;
 import Stack.Stack;
@@ -170,6 +171,9 @@ public class Main {
         System.out.println(bst.root.left.value);
 
         System.out.println(bst.contains(27));
+
+        HashTable table = new HashTable();
+        table.printTable();
 
 
     }
