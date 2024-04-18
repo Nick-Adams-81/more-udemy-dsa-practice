@@ -175,6 +175,12 @@ public class Main {
         HashTable table = new HashTable();
         table.printTable();
 
+        table.set("nails", 20);
+        table.set("hammer", 32);
+        table.set("screws", 6);
+        table.set("screwdriver", 100);
+        table.printTable();
+
 
     }
 }
