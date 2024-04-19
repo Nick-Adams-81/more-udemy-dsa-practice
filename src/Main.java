@@ -1,4 +1,5 @@
 import DLL.DLL;
+import Graphs.Graph;
 import HashTable.HashTable;
 import LinkedList.LinkedList;
 import Queue.Queue;
@@ -185,6 +186,10 @@ public class Main {
         System.out.println(table.get("nails"));
 
         System.out.println(table.keys());
+
+         Graph graph = new Graph();
+         graph.addVertex("A");
+         graph.printGraph();
 
 
     }
