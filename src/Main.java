@@ -184,6 +184,8 @@ public class Main {
 
         System.out.println(table.get("nails"));
 
+        System.out.println(table.keys());
+
 
     }
 }
