@@ -195,7 +195,11 @@ public class Main {
          graph.addEdge("A", "B");
          graph.printGraph();
 
-         graph.removeEdge("A", "B");
+//         graph.removeEdge("A", "B");
+//         graph.removeEdge("B", "A");
+         graph.printGraph();
+
+         graph.removeVertex("A");
          graph.printGraph();
 
 
