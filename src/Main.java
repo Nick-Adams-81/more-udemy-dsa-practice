@@ -195,6 +195,9 @@ public class Main {
          graph.addEdge("A", "B");
          graph.printGraph();
 
+         graph.removeEdge("A", "B");
+         graph.printGraph();
+
 
     }
 }
