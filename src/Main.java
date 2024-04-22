@@ -1,6 +1,7 @@
 import DLL.DLL;
 import Graphs.Graph;
 import HashTable.HashTable;
+import Heaps.Heap;
 import LinkedList.LinkedList;
 import Queue.Queue;
 import Stack.Stack;
@@ -201,6 +202,18 @@ public class Main {
 
          graph.removeVertex("A");
          graph.printGraph();
+
+        Heap heap = new Heap();
+        heap.insert(99);
+        heap.insert(72);
+        heap.insert(61);
+        heap.insert(58);
+
+        System.out.println(heap.getHeap());
+
+        heap.insert(100);
+
+        System.out.println(heap.getHeap());
 
 
     }
