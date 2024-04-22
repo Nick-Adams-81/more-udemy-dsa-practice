@@ -215,6 +215,9 @@ public class Main {
 
         System.out.println(heap.getHeap());
 
+        heap.remove();
+        System.out.println(heap.getHeap());
+
 
     }
 }
